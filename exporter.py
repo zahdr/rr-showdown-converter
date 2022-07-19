@@ -1,9 +1,25 @@
-def fixBerryName(itemName):
+def fixItemName(name):
     slackyBerryName = ('Aguav', 'Apicot', 'Aspear', 'Babiri', 'Belue', 'Bitter', 'Bluk', 'Burnt', 'Charti', 'Cheri', 'Chesto', 'Chilan', 'Chople', 'Coba', 'Colbur', 'Cornn', 'Custap', 'Durin', 'Enigma', 'Figy', 'Ganlon', 'Gold', 'Grepa', 'Haban', 'Hondew', 'Iapapa', 'Ice', 'Jaboca', 'Kasib', 'Kebia', 'Kee', 'Kelpsy', 'Lansat', 'Leppa', 'Liechi', 'Lum', 'Mago', 'Magost', 'Maranga', 'Micle', 'Mint', 'Miracle', 'Mystery', 'Nanab', 'Nomel', 'Occa', 'Oran', 'Pamtre', 'Passho', 'Payapa', 'Pecha', 'Persim', 'Petaya', 'Pinap', 'Pomeg', 'PRZ', 'PSN', 'Qualot', 'Rabuta', 'Rawst', 'Razz', 'Rindo', 'Roseli', 'Rowap', 'Salac', 'Shuca', 'Sitrus', 'Spelon', 'Starf', 'Tamato', 'Tanga', 'Wacan', 'Watmel', 'Wepear', 'Wiki', 'Yache')
-    if itemName in slackyBerryName:
-        return itemName + " Berry"
+    if name in slackyBerryName:
+        return name + " Berry"
     else:
-        return itemName
+        return name
+
+def fixPokemonName(name):
+    if name.split("-")[-1] == "A":
+        return name.split("-")[-2] + "-Alola"
+    elif name.split()[-1] == "A":
+        return name.split()[-2] + "-Alola"
+    elif name.split()[-1] == "H":
+        return name.split()[-2] + "-Hisui"
+    elif name.split("-")[-1] == "H":
+        return name.split("-")[-2] + "-Hisui"
+    elif name.split()[-1] == "G":
+        return name.split()[-2] + "-Galar"
+    elif name.split("-")[-1] == "G":
+        return name.split("-")[-2] + "-Galar"
+    else:
+        return name
 
 
 if __name__ == '__main__':
@@ -39,7 +55,7 @@ if __name__ == '__main__':
     # Final Output
     print(trainerName)
     for i in range(pokemonAmount):
-        print(pokemonName[i].strip('\n'), "@", fixBerryName(pokemonItem[i].strip('\n')) )
+        print(fixPokemonName(pokemonName[i].strip('\n')), "@", fixItemName(pokemonItem[i].strip('\n')) )
         print("Level:", pokemonLevel[i].strip('\n'))
         print(pokemonNature[i].strip('\n'), "Nature")
         print("Ability:", pokemonAbility[i].strip('\n'))
