@@ -39,7 +39,7 @@ if __name__ == '__main__':
     # Final Output
     print(trainerName)
     for i in range(pokemonAmount):
-        print(pokemonName[i], "@", fixBerryName(pokemonItem[i].strip('\n')) )
+        print(pokemonName[i].strip('\n'), "@", fixBerryName(pokemonItem[i].strip('\n')) )
         print("Level:", pokemonLevel[i].strip('\n'))
         print(pokemonNature[i].strip('\n'), "Nature")
         print("Ability:", pokemonAbility[i].strip('\n'))
