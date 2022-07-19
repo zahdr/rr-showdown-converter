@@ -1,0 +1,10 @@
+Brock			
+Geodude-A	Vulpix	Archen	Onix
+13	14	12	14
+Custap	Oran	Oran	Berry Juice
+Sturdy	Flash Fire	Defeatist	Sturdy
+Bashful	Modest	Bashful	Bashful
+Spark	Incinerate	Pluck	Rock Tomb
+Rock Tomb	Ominous Wind	Rock Tomb	Bulldoze
+Selfdestruct	HP Grass	Bulldoze	Sleep Talk
+Bulldoze	Sleep Talk	Roost	
