@@ -18,9 +18,9 @@ if __name__ == '__main__':
 
     with open('fight-input.txt', 'r') as f:
        trainerName = f.readline()
-       pokemonName = f.readline().split()
+       pokemonName = f.readline().split("\t")
        pokemonAmount = len(pokemonName)
-       pokemonLevel = f.readline().split()
+       pokemonLevel = f.readline().split("\t")
        pokemonItem = f.readline().split("\t")
        pokemonAbility = f.readline().split("\t")
        pokemonNature = f.readline().split("\t")
