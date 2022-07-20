@@ -1,8 +1,11 @@
 def fixAttackName(name):
-    if name.split()[0] == "HP":
-        return "Hidden Power " + name.split()[1]
+    if not name == "":
+        if name.split()[0] == "HP":
+            return "Hidden Power " + name.split()[1]
+        else:
+            return name 
     else:
-        return name 
+        return name
 
 def fixItemName(name):
     slackyBerryName = ('Aguav', 'Apicot', 'Aspear', 'Babiri', 'Belue', 'Bitter', 'Bluk', 'Burnt', 'Charti', 'Cheri', 'Chesto', 'Chilan', 'Chople', 'Coba', 'Colbur', 'Cornn', 'Custap', 'Durin', 'Enigma', 'Figy', 'Ganlon', 'Gold', 'Grepa', 'Haban', 'Hondew', 'Iapapa', 'Ice', 'Jaboca', 'Kasib', 'Kebia', 'Kee', 'Kelpsy', 'Lansat', 'Leppa', 'Liechi', 'Lum', 'Mago', 'Magost', 'Maranga', 'Micle', 'Mint', 'Miracle', 'Mystery', 'Nanab', 'Nomel', 'Occa', 'Oran', 'Pamtre', 'Passho', 'Payapa', 'Pecha', 'Persim', 'Petaya', 'Pinap', 'Pomeg', 'PRZ', 'PSN', 'Qualot', 'Rabuta', 'Rawst', 'Razz', 'Rindo', 'Roseli', 'Rowap', 'Salac', 'Shuca', 'Sitrus', 'Spelon', 'Starf', 'Tamato', 'Tanga', 'Wacan', 'Watmel', 'Wepear', 'Wiki', 'Yache')
